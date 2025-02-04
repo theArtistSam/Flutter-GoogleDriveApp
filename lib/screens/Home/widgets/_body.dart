@@ -20,7 +20,9 @@ class _Body extends StatelessWidget {
         ),
         title: Text(
           "My Drive",
-          style: AppTypography.normalSemiBold(),
+          style: AppTypography.normalSemiBold(
+            color: AppTheme.text2,
+          ),
         ),
         centerTitle: true, // Centers the text
         actions: [
@@ -47,15 +49,18 @@ class _Body extends StatelessWidget {
       body: ListView(
         children: [
           // Text Field
-          const Padding(
-            padding: EdgeInsets.symmetric(horizontal: 15.0),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 15.0),
             child: Column(
               children: [
-                AppTextfield(),
+                const AppTextfield(),
                 // Card
                 Padding(
-                  padding: EdgeInsets.symmetric(vertical: 32.0),
-                  child: _StorageCard(),
+                  padding: const EdgeInsets.symmetric(vertical: 32.0),
+                  child: GestureDetector(
+                    onTap: () => AppRoutes.details.push(context),
+                    child: const _StorageCard(),
+                  ),
                 ),
               ],
             ),
