@@ -5,10 +5,6 @@ class _Body extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final double w = MediaQuery.sizeOf(context).width;
-    final double h = MediaQuery.sizeOf(context).height;
-    final double ab = MediaQuery.paddingOf(context).top;
-
     return Scaffold(
       backgroundColor: AppTheme.background,
       appBar: AppBar(
@@ -27,15 +23,18 @@ class _Body extends StatelessWidget {
         centerTitle: true, // Centers the text
         actions: [
           Padding(
-            padding: const EdgeInsets.only(right: 14),
-            child: ClipOval(
-              child: Image.asset(
-                AppImages.avatar,
-                width: 24,
-                height: 24,
+            padding: const EdgeInsets.only(right: 6.0),
+            child: IconButton(
+              onPressed: () {},
+              icon: ClipOval(
+                child: Image.asset(
+                  AppImages.avatar,
+                  width: 24,
+                  height: 24,
+                ),
               ),
             ),
-          )
+          ),
         ],
       ),
       floatingActionButton: FloatingActionButton(
@@ -105,11 +104,19 @@ class _Body extends StatelessWidget {
                     ),
                     itemBuilder: (context, index) {
                       final folder = items[index];
-                      return _Folder(
-                        name: folder.name,
-                        date: folder.date,
-                        primary: folder.primary,
-                        secondary: folder.secondary,
+                      return GestureDetector(
+                        onTap: () => AppRoutes.folder.push(
+                          context,
+                          arguments: {
+                            "folder": folder,
+                          },
+                        ),
+                        child: _Folder(
+                          name: folder.name,
+                          date: folder.date,
+                          primary: folder.primary,
+                          secondary: folder.secondary,
+                        ),
                       );
                     },
                   ),

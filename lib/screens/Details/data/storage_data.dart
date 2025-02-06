@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:g_drive/configs/app_theme.dart';
-import 'package:g_drive/screens/Details/models/storage_type.dart';
+import 'package:g_drive/screens/details/models/storage_type.dart';
 
 List<StorageType> items = [
   StorageType(name: "Images", value: 3.0, color: AppTheme.brandPrimary),

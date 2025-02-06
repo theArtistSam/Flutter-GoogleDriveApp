@@ -7,7 +7,7 @@ import 'package:g_drive/configs/app_images.dart';
 import 'package:g_drive/configs/app_theme.dart';
 import 'package:g_drive/configs/app_typography.dart';
 import 'package:g_drive/router/routes.dart';
-import 'package:g_drive/screens/Home/data/folder_data.dart';
+import 'package:g_drive/screens/home/data/folder_data.dart';
 import 'package:g_drive/widgets/app_textfield.dart';
 
 part 'widgets/_body.dart';

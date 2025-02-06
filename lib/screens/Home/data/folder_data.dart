@@ -1,5 +1,5 @@
 import 'package:g_drive/configs/app_theme.dart';
-import 'package:g_drive/screens/Home/models/folder_item.dart';
+import 'package:g_drive/screens/home/models/folder_item.dart';
 
 final List<FolderItem> items = [
   FolderItem(

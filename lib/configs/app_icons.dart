@@ -10,4 +10,6 @@ class AppIcons {
   static const String search = "${path}search.svg";
   static const String twoDots = "${path}two-dots.svg";
   static const String gdrive = "${path}gdrive.svg";
+  static const String smallArrowDown = "${path}small-arrow-down.svg";
+  static const String optionMenu = "${path}option-menu.svg";
 }

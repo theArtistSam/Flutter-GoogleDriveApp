@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:g_drive/router/router.dart';
 import 'package:g_drive/router/routes.dart';
-import 'package:g_drive/screens/Home/home.dart';
 import 'package:navigation_history_observer/navigation_history_observer.dart';
 
 void main() {

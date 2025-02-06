@@ -4,9 +4,7 @@ import 'package:g_drive/configs/_string_ext.dart';
 import 'package:g_drive/configs/app_icons.dart';
 import 'package:g_drive/configs/app_theme.dart';
 import 'package:g_drive/configs/app_typography.dart';
-import 'package:g_drive/router/routes.dart';
-import 'package:g_drive/screens/Details/data/storage_data.dart';
-import 'package:g_drive/screens/Home/home.dart';
+import 'package:g_drive/screens/details/data/storage_data.dart';
 import 'package:pie_chart/pie_chart.dart';
 
 part 'widgets/_body.dart';
