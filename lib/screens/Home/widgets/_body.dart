@@ -1,7 +1,8 @@
 part of '../home.dart';
 
 class _Body extends StatelessWidget {
-  const _Body();
+  final AdvancedDrawerController controller;
+  const _Body({required this.controller});
 
   @override
   Widget build(BuildContext context) {
@@ -12,7 +13,9 @@ class _Body extends StatelessWidget {
         elevation: 0, // Remove shadow
         leading: IconButton(
           icon: SvgPicture.asset(AppIcons.menu),
-          onPressed: () {},
+          onPressed: () {
+            controller.showDrawer();
+          },
         ),
         title: Text(
           "My Drive",
