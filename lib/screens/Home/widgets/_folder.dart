@@ -16,7 +16,6 @@ class _Folder extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 125,
       decoration: BoxDecoration(
         color: primary.withAlpha(25),
         borderRadius: BorderRadius.circular(16),

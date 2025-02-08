@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:g_drive/router/router.dart';
 import 'package:g_drive/router/routes.dart';
+import 'package:flutter/services.dart' as services;
 import 'package:navigation_history_observer/navigation_history_observer.dart';
 
 void main() {
@@ -21,6 +22,18 @@ class _MyAppState extends State<MyApp> {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
+    services.SystemChrome.setSystemUIOverlayStyle(
+      const services.SystemUiOverlayStyle(
+        statusBarColor: Colors.transparent,
+        systemNavigationBarColor: Colors.transparent,
+        systemNavigationBarDividerColor: Colors.transparent,
+      ),
+    );
+
+    services.SystemChrome.setEnabledSystemUIMode(
+      services.SystemUiMode.edgeToEdge,
+      overlays: [services.SystemUiOverlay.top],
+    );
     return MaterialApp(
       navigatorKey: navigatorKey,
       navigatorObservers: [

@@ -103,7 +103,7 @@ class _Body extends StatelessWidget {
                       crossAxisCount: 2, // 2 columns
                       crossAxisSpacing: 16,
                       mainAxisSpacing: 16,
-                      childAspectRatio: 1.49, // Aspect ratio for the grid items
+                      childAspectRatio: 1.42, // Aspect ratio for the grid items
                     ),
                     itemBuilder: (context, index) {
                       final folder = items[index];
