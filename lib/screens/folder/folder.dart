@@ -10,6 +10,7 @@ import 'package:g_drive/screens/folder/data/folder_list_data.dart';
 import 'package:g_drive/screens/home/models/folder_item.dart';
 part 'widgets/_body.dart';
 part 'widgets/_folder_list_tile.dart';
+part 'widgets/_appbar.dart';
 
 class FolderScreen extends StatelessWidget {
   const FolderScreen({super.key});

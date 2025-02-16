@@ -9,6 +9,7 @@ class _Body extends StatelessWidget {
     return Scaffold(
       backgroundColor: AppTheme.background,
       appBar: AppBar(
+        surfaceTintColor: Colors.transparent,
         backgroundColor: AppTheme.background, // Customize color
         elevation: 0, // Remove shadow
         leading: IconButton(
